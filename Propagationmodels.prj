@@ -1,25 +1,30 @@
 <deployment-project plugin="plugin.ezdeploy" plugin-version="1.0">
-  <configuration file="D:\VUT_GD\Výuka\BIOT\IOT Courses L_20_21\Shared\Propagation_Models\models.prj" location="D:\VUT_GD\Výuka\BIOT\IOT Courses L_20_21\Shared\Propagation_Models" name="models" target="target.ezdeploy.standalone" target-name="Application Compiler">
-    <param.appname>Propagation models</param.appname>
-    <param.icon />
-    <param.icons />
+  <configuration file="D:\VUT_GD\Výuka\BIOT\IOT Courses L_20_21\Shared\Propagation_Models\Propagationmodels.prj" location="D:\VUT_GD\Výuka\BIOT\IOT Courses L_20_21\Shared\Propagation_Models" name="Propagationmodels" target="target.ezdeploy.standalone" target-name="Application Compiler">
+    <param.appname>Propagation_Models</param.appname>
+    <param.icon>${PROJECT_ROOT}\Propagationmodels_resources\icon.ico</param.icon>
+    <param.icons>
+      <file>${PROJECT_ROOT}\Propagationmodels_resources\icon_48.png</file>
+      <file>${PROJECT_ROOT}\Propagationmodels_resources\icon_32.png</file>
+      <file>${PROJECT_ROOT}\Propagationmodels_resources\icon_24.png</file>
+      <file>${PROJECT_ROOT}\Propagationmodels_resources\icon_16.png</file>
+    </param.icons>
     <param.version>1.0</param.version>
-    <param.authnamewatermark />
-    <param.email />
-    <param.company />
+    <param.authnamewatermark>Martin Stusek</param.authnamewatermark>
+    <param.email>xstuse01@vutbr.cz</param.email>
+    <param.company>BUT</param.company>
     <param.summary />
     <param.description />
-    <param.screenshot />
+    <param.screenshot>C:\Users\marti\Desktop\splash.png</param.screenshot>
     <param.guid />
-    <param.installpath.string>\Propagation models\</param.installpath.string>
+    <param.installpath.string>\BUT\Propagation_Models\</param.installpath.string>
     <param.installpath.combo>option.installpath.programfiles</param.installpath.combo>
     <param.logo />
     <param.install.notes />
     <param.target.install.notes />
-    <param.intermediate>${PROJECT_ROOT}\models\for_testing</param.intermediate>
-    <param.files.only>${PROJECT_ROOT}\models\for_redistribution_files_only</param.files.only>
-    <param.output>${PROJECT_ROOT}\models\for_redistribution</param.output>
-    <param.logdir>${PROJECT_ROOT}\models</param.logdir>
+    <param.intermediate>${PROJECT_ROOT}\Propagationmodels\for_testing</param.intermediate>
+    <param.files.only>${PROJECT_ROOT}\Propagationmodels\for_redistribution_files_only</param.files.only>
+    <param.output>${PROJECT_ROOT}\Propagationmodels\for_redistribution</param.output>
+    <param.logdir>${PROJECT_ROOT}\Propagationmodels</param.logdir>
     <param.enable.clean.build>false</param.enable.clean.build>
     <param.user.defined.mcr.options />
     <param.target.type>subtarget.standalone</param.target.type>
@@ -43,15 +48,12 @@
 	 -?  print help on how to use the application 
 	 input arguments</param.help.text>
     <unset>
-      <param.icon />
-      <param.icons />
       <param.version />
       <param.authnamewatermark />
       <param.email />
       <param.company />
       <param.summary />
       <param.description />
-      <param.screenshot />
       <param.guid />
       <param.installpath.string />
       <param.installpath.combo />
@@ -85,14 +87,18 @@
     <fileset.resources />
     <fileset.package />
     <fileset.depfun>
+      <file>${PROJECT_ROOT}\cost231.m</file>
+      <file>${PROJECT_ROOT}\ecc33.m</file>
+      <file>${PROJECT_ROOT}\ericsson.m</file>
+      <file>${PROJECT_ROOT}\free_space.m</file>
       <file>${PROJECT_ROOT}\hata_rural.m</file>
       <file>${PROJECT_ROOT}\hata_urban.m</file>
       <file>${PROJECT_ROOT}\urban_3gpp.m</file>
     </fileset.depfun>
     <build-deliverables>
-      <file location="${PROJECT_ROOT}\models\for_testing" name="splash.png" optional="false">D:\VUT_GD\Výuka\BIOT\IOT Courses L_20_21\Shared\Propagation_Models\models\for_testing\splash.png</file>
-      <file location="${PROJECT_ROOT}\models\for_testing" name="Propagation models.exe" optional="false">D:\VUT_GD\Výuka\BIOT\IOT Courses L_20_21\Shared\Propagation_Models\models\for_testing\Propagation models.exe</file>
-      <file location="${PROJECT_ROOT}\models\for_testing" name="readme.txt" optional="true">D:\VUT_GD\Výuka\BIOT\IOT Courses L_20_21\Shared\Propagation_Models\models\for_testing\readme.txt</file>
+      <file location="${PROJECT_ROOT}\Propagationmodels\for_testing" name="splash.png" optional="false">D:\VUT_GD\Výuka\BIOT\IOT Courses L_20_21\Shared\Propagation_Models\Propagationmodels\for_testing\splash.png</file>
+      <file location="${PROJECT_ROOT}\Propagationmodels\for_testing" name="readme.txt" optional="true">D:\VUT_GD\Výuka\BIOT\IOT Courses L_20_21\Shared\Propagation_Models\Propagationmodels\for_testing\readme.txt</file>
+      <file location="${PROJECT_ROOT}\Propagationmodels\for_testing" name="Propagation_Models.exe" optional="false">D:\VUT_GD\Výuka\BIOT\IOT Courses L_20_21\Shared\Propagation_Models\Propagationmodels\for_testing\Propagation_Models.exe</file>
     </build-deliverables>
     <workflow />
     <matlab>
